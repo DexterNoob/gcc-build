@@ -4,7 +4,7 @@
 set -e
 
 echo "*****************************************"
-echo "* Building Bare-Metal Bleeding Edge GCC *"
+echo "* Building dexternoob GCC *"
 echo "*****************************************"
 
 # TODO: Add more dynamic option handling
@@ -73,7 +73,7 @@ build_gcc() {
   echo "Building GCC"
   cd gcc
   ./contrib/download_prerequisites
-  echo "Bleeding Edge" > gcc/DEV-PHASE
+  echo "Dexter" > gcc/DEV-PHASE
   cd ../
   mkdir build-gcc
   cd build-gcc
@@ -98,7 +98,7 @@ build_gcc() {
     --with-headers="/usr/include" \
     --with-linker-hash-style=gnu \
     --with-newlib \
-    --with-pkgversion="Eva GCC" \
+    --with-pkgversion="Noob GCC" \
     --with-sysroot
 
   make all-gcc -j$(nproc --all)
