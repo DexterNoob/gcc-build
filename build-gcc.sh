@@ -32,7 +32,7 @@ echo "Cleaning up previously cloned repos..."
 rm -rf $WORK_DIR/{binutils,build-binutils,build-gcc,gcc}
 
 echo "||                                                                    ||"
-echo "|| Building Bare Metal Toolchain for ${arch} with ${TARGET} as target ||"
+echo "|| Building dexternoob Toolchain for ${arch} with ${TARGET} as target ||"
 echo "||                                                                    ||"
 
 download_resources() {
